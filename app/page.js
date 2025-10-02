@@ -10,8 +10,8 @@ export default function BoxBasic() {
         <ul>
           <li><a href="/product">Products</a></li>
           <li><a href="/category">Category</a></li>
+          <li><a href="/customer">Customer</a></li> {/* added */}
         </ul>
-        
       </Box>
     </main>
   );
