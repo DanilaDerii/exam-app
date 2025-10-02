@@ -64,7 +64,6 @@ export default function CustomerDetail({ params }) {
   }
 
   if (loading) return <p className="p-6">Loading…</p>;
-
   if (!customer) return <p className="p-6">No customer found</p>;
 
   return (
@@ -112,7 +111,10 @@ export default function CustomerDetail({ params }) {
         </div>
 
         <div className="flex gap-3">
-          <button className="bg-black text-white px-4 py-2 rounded">Update</button>
+          {/* Explicitly mark Update as submit */}
+          <button type="submit" className="bg-black text-white px-4 py-2 rounded">
+            Update
+          </button>
           <button
             type="button"
             onClick={onDelete}
